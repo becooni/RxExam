@@ -2,9 +2,9 @@ package com.becooni.rxexam
 
 import android.util.Log
 
-
 fun log(text: String) {
-    Log.e("RXTEST", "${getThreadName()} | $text")
+    val time = System.currentTimeMillis() - startTime
+    Log.e("RXTEST", "${getThreadName()} | $time | $text")
 }
 
 fun getThreadName(): String {
@@ -14,3 +14,9 @@ fun getThreadName(): String {
     }
     return threadName
 }
+
+fun start() {
+    startTime = System.currentTimeMillis()
+}
+
+private var startTime = 0L

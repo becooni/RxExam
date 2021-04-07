@@ -3,7 +3,7 @@ package com.becooni.rxexam
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.becooni.rxexam.databinding.ActivityMainBinding
-import com.becooni.rxexam.operator.create.heartbeat
+import com.becooni.rxexam.operator.transform.concatMap
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        heartbeat()
+        start()
+
+        concatMap()
     }
 }
