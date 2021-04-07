@@ -3,9 +3,7 @@ package com.becooni.rxexam
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.becooni.rxexam.databinding.ActivityMainBinding
-import com.becooni.rxexam.operator.transform.groupBy
-import com.becooni.rxexam.operator.transform.scan
-import com.becooni.rxexam.operator.transform.switchMap
+import com.becooni.rxexam.operator.electricBillV2
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +15,6 @@ class MainActivity : AppCompatActivity() {
 
         start()
 
-        scan()
+        electricBillV2()
     }
 }

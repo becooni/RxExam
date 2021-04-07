@@ -33,3 +33,25 @@ fun getShape(obj: String?): String {
         else -> BALL
     }
 }
+
+fun getSuffix(shape: String): String {
+    return when (shape) {
+        HEXAGON -> "-H"
+        OCTAGON -> "-O"
+        RECTANGLE -> "-R"
+        TRIANGLE -> "-T"
+        DIAMOND -> "<>"
+        PENTAGON -> "-P"
+        STAR -> "-S"
+        else -> ""
+    }
+}
+
+fun getColor(shape: String): String {
+    return if (shape.endsWith("<>")) {
+        shape.replace("<>", "").trim()
+    } else {
+        val hyphen = shape.indexOf("-")
+        if (hyphen > 0) shape.substring(0, hyphen) else shape
+    }
+}
