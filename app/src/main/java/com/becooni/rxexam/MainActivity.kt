@@ -3,7 +3,7 @@ package com.becooni.rxexam
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.becooni.rxexam.databinding.ActivityMainBinding
-import com.becooni.rxexam.operator.combine.combineLatest
+import com.becooni.rxexam.operator.reactiveSum
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +15,6 @@ class MainActivity : AppCompatActivity() {
 
         start()
 
-        combineLatest()
+        reactiveSum()
     }
 }
