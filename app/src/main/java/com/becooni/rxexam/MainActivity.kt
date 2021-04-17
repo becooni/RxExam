@@ -3,7 +3,7 @@ package com.becooni.rxexam
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.becooni.rxexam.databinding.ActivityMainBinding
-import com.becooni.rxexam.operator.conditional.takeUntil
+import com.becooni.rxexam.operator.conditional.skipUntil
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +15,6 @@ class MainActivity : AppCompatActivity() {
 
         start()
 
-        takeUntil()
+        skipUntil()
     }
 }
