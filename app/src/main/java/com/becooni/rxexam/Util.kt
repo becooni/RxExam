@@ -1,6 +1,7 @@
 package com.becooni.rxexam
 
 import android.util.Log
+import kotlin.random.Random
 
 fun log(text: String) {
     val time = System.currentTimeMillis() - startTime
@@ -20,3 +21,7 @@ fun start() {
 }
 
 private var startTime = 0L
+
+fun doSomething() {
+    Thread.sleep(Random.nextLong(100))
+}
