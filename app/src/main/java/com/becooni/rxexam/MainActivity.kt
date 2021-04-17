@@ -3,7 +3,7 @@ package com.becooni.rxexam
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.becooni.rxexam.databinding.ActivityMainBinding
-import com.becooni.rxexam.operator.conditional.all
+import com.becooni.rxexam.operator.math.mathExample
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +15,6 @@ class MainActivity : AppCompatActivity() {
 
         start()
 
-        all()
+        mathExample()
     }
 }
